@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cooking Timer</string>
+    <string name="add_timer">Add Timer</string>
+    <string name="no_timers">No timers yet. Tap + to add one.</string>
+    <string name="timer_name">Timer Name</string>
+    <string name="duration">Duration</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+    <string name="delete">Delete</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="display_mode">Display Mode</string>
+    <string name="digital">Digital</string>
+    <string name="analog">Analog</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="timer_complete">Timer Complete!</string>
+    <string name="camera_permission_required">Camera permission required</string>
+    <string name="storage_permission_required">Storage permission required</string>
+</resources>
