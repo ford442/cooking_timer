@@ -49,7 +49,7 @@ object TimerManager {
 
         stopTimer(timerId)
 
-        val countdown = object : CountDownTimer(timer.remainingMillis, 100) {
+        val countdown = object : CountDownTimer(timer.remainingMillis, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 timer.remainingMillis = millisUntilFinished
                 timer.isRunning = true

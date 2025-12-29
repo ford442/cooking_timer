@@ -23,4 +23,6 @@
     <string name="timer_complete">Timer Complete!</string>
     <string name="camera_permission_required">Camera permission required</string>
     <string name="storage_permission_required">Storage permission required</string>
+    <string name="error_timer_name_required">Please enter a timer name</string>
+    <string name="error_duration_required">Please set a duration</string>
 </resources>

@@ -116,9 +116,11 @@ class AddTimerActivity : AppCompatActivity() {
                     requestStoragePermission.launch(Manifest.permission.READ_MEDIA_IMAGES)
                 }
             } else {
+                @Suppress("DEPRECATION")
                 if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                     pickImage()
                 } else {
+                    @Suppress("DEPRECATION")
                     requestStoragePermission.launch(Manifest.permission.READ_EXTERNAL_STORAGE)
                 }
             }
@@ -223,7 +225,7 @@ class AddTimerActivity : AppCompatActivity() {
     private fun saveTimer() {
         val name = nameInput.text?.toString()?.trim() ?: ""
         if (name.isEmpty()) {
-            Toast.makeText(this, "Please enter a timer name", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, R.string.error_timer_name_required, Toast.LENGTH_SHORT).show()
             return
         }
 
@@ -233,7 +235,7 @@ class AddTimerActivity : AppCompatActivity() {
         val totalMillis = ((hours * 3600L) + (minutes * 60L) + seconds) * 1000L
 
         if (totalMillis == 0L) {
-            Toast.makeText(this, "Please set a duration", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, R.string.error_duration_required, Toast.LENGTH_SHORT).show()
             return
         }
 
